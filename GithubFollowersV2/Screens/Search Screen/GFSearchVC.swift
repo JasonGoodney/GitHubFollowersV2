@@ -37,6 +37,13 @@ class GFSearchVC: UIViewController, HasCustomView {
         title = "Search"
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        customView.emptyTextFieldWarning(hidden: true)
+    }
 
     
     private func configure() {
