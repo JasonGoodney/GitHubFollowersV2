@@ -50,7 +50,7 @@ enum PersistenceManager {
     
     static func retrieveFavorites(completion: @escaping (Result<[Follower], GFError>) -> Void) {
         guard let savedData = PersistenceManager.defaults.object(forKey: Keys.favorites) as? Data else {
-            completion(.failure(.noFavorites))
+            completion(.success([]))
             return
         }
         
