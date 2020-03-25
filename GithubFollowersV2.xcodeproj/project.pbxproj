@@ -136,9 +136,9 @@
 		D70089F8242286F7007CE351 /* GithubFollowersV2 */ = {
 			isa = PBXGroup;
 			children = (
+				D7008A1D2422A9A4007CE351 /* Screens */,
 				D7008A53242436B3007CE351 /* View Controllers */,
 				D7008A3F2423EF92007CE351 /* Custom Views */,
-				D7008A1D2422A9A4007CE351 /* Screens */,
 				D7008A2C2423EAD1007CE351 /* Models */,
 				D7008A432423F799007CE351 /* Managers */,
 				D7008A2924230101007CE351 /* Protocols */,

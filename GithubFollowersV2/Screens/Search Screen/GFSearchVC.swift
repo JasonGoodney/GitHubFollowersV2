@@ -50,7 +50,6 @@ class GFSearchVC: UIViewController, HasCustomView {
     @objc private func pushFollowerListVC() {
         guard isUsernameEntered else {
             customView.emptyTextFieldWarning(hidden: false)
-//            self.presentAlertOnMainThread(title: "Empty username", message: "Please enter a username. We need to know who to look for 😀.")
             return
         }
         
@@ -58,6 +57,7 @@ class GFSearchVC: UIViewController, HasCustomView {
         let followerListVC  = GFFollowerListVC(username: username)
         navigationController?.pushViewController(followerListVC, animated: true)
         
+        customView.textField.text = ""
         customView.textField.resignFirstResponder()
     }
 }
